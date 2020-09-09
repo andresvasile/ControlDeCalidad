@@ -1,0 +1,9 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.Datos.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.Datos.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.Dominio.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.Dominio.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.pdb

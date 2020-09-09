@@ -1,0 +1,16 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Presentacion.exe.config
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Presentacion.exe
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Presentacion.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.Properties.Resources.resources
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.csproj.GenerateResource.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.exe
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Datos.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Dominio.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Datos.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\ControlDeCalidad.Dominio.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.VistaInspeccion.resources
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.Vistas.VistaOrdenDeProduccion.resources
