@@ -56,6 +56,7 @@
     <Compile Include="Interfaces\IVistaAutenticacion.cs" />
     <Compile Include="Interfaces\IVistaGestionarColores.cs" />
     <Compile Include="Interfaces\IVistaGestionarModelos.cs" />
+    <Compile Include="Interfaces\IVistaHermanado.cs" />
     <Compile Include="Interfaces\IVistaInspeccion.cs" />
     <Compile Include="Interfaces\IVistaInteractiva.cs" />
     <Compile Include="Interfaces\IVistaOrdenDeProduccion.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Presentadores\PresentadorComun.cs" />
     <Compile Include="Presentadores\PresentadorGestionarColores.cs" />
     <Compile Include="Presentadores\PresentadorGestionarModelos.cs" />
+    <Compile Include="Presentadores\PresentadorHermanado.cs" />
     <Compile Include="Presentadores\PresentadorInspeccion.cs" />
     <Compile Include="Vistas\VistaAdministrarOrdenDeProduccion.cs">
       <SubType>Form</SubType>

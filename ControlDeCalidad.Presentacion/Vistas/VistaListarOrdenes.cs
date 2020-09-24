@@ -28,8 +28,7 @@ namespace ControlDeCalidad.Presentacion.Vistas
         private void BtnSeleccionar_Click(object sender, EventArgs e)
         {
             try{
-            int numeroLinea, numeroOrden;
-            numeroLinea = TraerColumna(0);
+            int numeroOrden;
             numeroOrden = TraerColumna(1);
             _presentador.asociarSupervisor(numeroOrden);
             var vista = new VistaDeterminarProceso();

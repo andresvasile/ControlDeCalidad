@@ -22,12 +22,20 @@ namespace ControlDeCalidad.Presentacion.Vistas
         {
             var vista = new VistaInspeccion();
             vista.ShowDialog();
+            if (vista.IsDisposed)
+            {
+                this.Dispose();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             var vista = new VistaHermanado();
             vista.ShowDialog();
+            if (vista.IsDisposed)
+            {
+                this.Dispose();
+            }
         }
     }
 }

@@ -15,23 +15,21 @@ namespace ControlDeCalidad.Presentacion.Presentadores
 {
     public class PresentadorInspeccion : PresentadorComun<IVistaInspeccion>
     {
-        private int i = 0;
         private ContoladorApi _controlador;
         public PresentadorInspeccion()
         {
            _controlador = new ContoladorApi();
         }
 
-        internal int agregarDefecto(Defecto defec, string tipoPie)
+        internal void agregarDefecto(Defecto defec, string tipoPie)
         {
             var defectoModel = new DefectoModel()
             {
                 Descripcion = defec.Descripcion,
                 Tipo = defec.Tipo.ToString()
             };  
-            var b = _controlador.agregarDefecto(defectoModel, tipoPie);
+            _controlador.agregarDefecto(defectoModel, tipoPie);
             
-            return i++;
         }
 
 
@@ -73,6 +71,20 @@ namespace ControlDeCalidad.Presentacion.Presentadores
             if (b)
             {
                 Vista.Cerrar();
+            }
+        }
+
+        internal void Desasociar()
+        {
+            var b= _controlador.DesasociarSupervisor();
+            if (b)
+            {
+                Vista.MostrarMensaje("Supervisor Desasociado");
+                Vista.Cerrar();
+            }
+            else
+            {
+                Vista.MostrarMensaje("El supervisor ya esta desasociado");
             }
         }
     }

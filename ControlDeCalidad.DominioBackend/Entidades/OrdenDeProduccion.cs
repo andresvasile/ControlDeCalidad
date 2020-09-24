@@ -48,16 +48,6 @@ namespace ControlDeCalidad.Api.Entidades
             return false;
         }
 
-        private void PausarOP()
-        {
-            Estado = EstadoOrden.Pausada;
-        }
-
-        private void FinalizarOP()
-        {
-            Estado = EstadoOrden.Finalizada;
-        }
-
         internal bool esEmpleado(Empleado e)
         {
             if (empleado==e) return true;
@@ -68,11 +58,6 @@ namespace ControlDeCalidad.Api.Entidades
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-            var jn = jornada.Empleado == null;
-            if (jornada.Empleado == null)
-            {
-                jornada.Empleado = e;
-            }
             jornada.agregarInspeccionPrimera(hora);
         }
 
@@ -91,16 +76,26 @@ namespace ControlDeCalidad.Api.Entidades
             }
         }
 
-        internal int agregarInspeccionDefecto(string hora, Defecto defecto, TipoPie tipoPie, Empleado e)
+        internal void agregarInspeccionDefecto(string hora, Defecto defecto, TipoPie tipoPie)
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-            if (jornada.Empleado != null)
-            {
-                jornada.Empleado = e;
-            }
-            var b = jornada.agregarInspeccionDefecto(hora, defecto, tipoPie);
-            return b;
+            jornada.agregarInspeccionDefecto(hora, defecto, tipoPie);
+            
+        }
+
+        internal void agregarInspeccionPrimeraHermanado()
+        {
+            var x = jornadas.Count;
+            var jornada = jornadas[x - 1];
+            jornada.agregarInspeccionPrimeraHermanado();
+        }
+        internal void agregarInspeccionSegundaHermanado()
+        {
+            var x = jornadas.Count;
+            var jornada = jornadas[x - 1];
+
+            jornada.agregarInspeccionSegundaHermanado();
         }
 
         internal void reanudarOrden(string hora)
@@ -132,17 +127,13 @@ namespace ControlDeCalidad.Api.Entidades
             }
         }
 
-        internal void finalizarOrden(string hora, bool opcion=false)
+        internal void finalizarOrden(string hora)
         {
             if (empleado != null)
             {
-                if (opcion)
-                {
-                    var x = jornadas.Count;
-                    var jornada = jornadas[x - 1];
-                    jornada.Fin = hora;
-                }
-
+                var x = jornadas.Count;
+                var jornada = jornadas[x - 1];
+                jornada.Fin = hora;
                 Estado = EstadoOrden.Finalizada;
             }
             else

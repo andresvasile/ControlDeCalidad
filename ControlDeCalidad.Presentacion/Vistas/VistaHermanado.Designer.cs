@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaHermanado));
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnDesasociar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.TbxCantidadSegunda = new System.Windows.Forms.TextBox();
@@ -48,14 +48,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnDeslogear)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
+            // BtnDesasociar
             // 
-            this.button3.Location = new System.Drawing.Point(205, 270);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Desasociar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnDesasociar.Location = new System.Drawing.Point(205, 270);
+            this.BtnDesasociar.Name = "BtnDesasociar";
+            this.BtnDesasociar.Size = new System.Drawing.Size(142, 23);
+            this.BtnDesasociar.TabIndex = 8;
+            this.BtnDesasociar.Text = "Desasociar";
+            this.BtnDesasociar.UseVisualStyleBackColor = true;
+            this.BtnDesasociar.Click += new System.EventHandler(this.BtnDesasociar_Click);
             // 
             // BtnSalir
             // 
@@ -65,6 +66,7 @@
             this.BtnSalir.TabIndex = 9;
             this.BtnSalir.Text = "Volver";
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // label2
             // 
@@ -119,6 +121,7 @@
             this.PbxAgregarSegunda.Size = new System.Drawing.Size(36, 36);
             this.PbxAgregarSegunda.TabIndex = 26;
             this.PbxAgregarSegunda.TabStop = false;
+            this.PbxAgregarSegunda.Click += new System.EventHandler(this.PbxAgregarSegunda_Click);
             // 
             // PbxQuitar
             // 
@@ -139,6 +142,7 @@
             this.PbxAgregar.Size = new System.Drawing.Size(36, 36);
             this.PbxAgregar.TabIndex = 22;
             this.PbxAgregar.TabStop = false;
+            this.PbxAgregar.Click += new System.EventHandler(this.PbxAgregar_Click);
             // 
             // label1
             // 
@@ -177,7 +181,7 @@
             this.Controls.Add(this.PbxAgregar);
             this.Controls.Add(this.TbxCantidadPrimera);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnDesasociar);
             this.Name = "VistaHermanado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaHermanado";
@@ -192,7 +196,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnDesasociar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox PbxQuitarSegunda;

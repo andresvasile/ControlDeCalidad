@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 using ControlDeCalidad.DominioBackend.Entidades;
@@ -79,6 +80,29 @@ namespace ControlDeCalidad.Api.Entidades
             return false;
         }
 
+        public void registrarParDePrimeraHermanado(Empleado e)
+        {
+            foreach(var op in ordenes)
+            {
+                var v = op.esEmpleado(e);
+                if (v)
+                {
+                    op.agregarInspeccionPrimeraHermanado();
+                }
+            }
+        }
+        public void registrarParDeSegundaHermanado(Empleado e)
+        {
+            foreach (var op in ordenes)
+            {
+                var v = op.esEmpleado(e);
+                if (v)
+                {
+                    op.agregarInspeccionSegundaHermanado();
+                }
+            }
+        }
+
         public void asociarEmp(int numeroOrden, Empleado e)
         {
             foreach (var op in ordenes)
@@ -113,6 +137,19 @@ namespace ControlDeCalidad.Api.Entidades
             }
             return int.Parse(horaAct);
         }
+
+        public void DesasociarEmp(Empleado e)
+        {
+            foreach (var orden in ordenes)
+            {
+                if (orden.empleado == e && orden.esPausada())
+                {
+                    orden.empleado = null;
+                }
+            }
+        }
+
+
         public void registrarDefecto(Empleado e, string hora, Defecto defecto, string tipoPie)
         {
             foreach (var op in ordenes)
@@ -120,7 +157,7 @@ namespace ControlDeCalidad.Api.Entidades
                 var v = op.esEmpleado(e);
                 if (v)
                 {
-                    op.agregarInspeccionDefecto(hora, defecto, (TipoPie)Enum.Parse(typeof(TipoPie), tipoPie), e); ;
+                    op.agregarInspeccionDefecto(hora, defecto, (TipoPie)Enum.Parse(typeof(TipoPie), tipoPie)); ;
                 }
             }
         }
@@ -167,18 +204,12 @@ namespace ControlDeCalidad.Api.Entidades
         {
             foreach (var orden in ordenes)
             {
-                if (orden.esActiva())
-                {
-                    orden.finalizarOrden(hora,true);
-                    return orden;
-                }
-                else if (orden.esPausada())
+                if (orden.esActiva() || orden.esPausada())
                 {
                     orden.finalizarOrden(hora);
                     return orden;
                 }
             }
-
             return null;
         }
     }

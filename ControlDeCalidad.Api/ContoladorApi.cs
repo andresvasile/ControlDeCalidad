@@ -45,6 +45,29 @@ namespace ControlDeCalidad.Api
             return tupla;
         }
 
+        public void agregarParDePrimeraHermanado()
+        {
+            var hora = obtenerHora();
+            var ldts = _repositorio.buscarLineas();
+            var e = GestorSesion.Instance.buscarEmpleado();
+            foreach (var linea in ldts)
+            {
+                linea.registrarParDePrimeraHermanado(e);
+            }
+        }
+        public void agregarParDeSegundaHermanado()
+        {
+            var hora = obtenerHora();
+            var ldts = _repositorio.buscarLineas();
+            var e = GestorSesion.Instance.buscarEmpleado();
+            foreach (var linea in ldts)
+            {
+                linea.registrarParDeSegundaHermanado(e);
+            }
+        }
+
+        
+
         public bool validarAsociado()
         {
             var e=GestorSesion.Instance.buscarEmpleado();
@@ -81,6 +104,19 @@ namespace ControlDeCalidad.Api
                 }
             }
             return null;
+        }
+
+        public bool DesasociarSupervisor()
+        {
+            var ldts = _repositorio.buscarLineas();
+            var e = GestorSesion.Instance.buscarEmpleado();
+            foreach (var linea in ldts)
+            {
+                linea.DesasociarEmp(e);
+                return true;
+            }
+
+            return false;
         }
 
         private OrdenDeProduccionModel MapearOrden(OrdenDeProduccion op)
@@ -377,7 +413,7 @@ namespace ControlDeCalidad.Api
             }
         }
 
-        public int agregarDefecto(DefectoModel defectoModel, string tipoPie)
+        public void agregarDefecto(DefectoModel defectoModel, string tipoPie)
         {
             var defecto = new Defecto()
             {
@@ -390,10 +426,9 @@ namespace ControlDeCalidad.Api
             var e = GestorSesion.Instance.buscarEmpleado();
             foreach (var linea in ldts)
             {
-                var b = linea.registrarDefecto(e, hora, defecto, tipoPie);
-                return b;
+                linea.registrarDefecto(e, hora, defecto, tipoPie);
             }
-            return 0;
+            
 
         }
 

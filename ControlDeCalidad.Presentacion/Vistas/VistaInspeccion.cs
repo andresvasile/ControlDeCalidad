@@ -19,7 +19,11 @@ namespace ControlDeCalidad.Presentacion
     public partial class VistaInspeccion : Form, IVistaInspeccion
     {
         private readonly PresentadorInspeccion _presentador;
-        private int b;
+        int inspeccion = 0;
+        private int pdp = 0;
+        private List<int> enteros;
+
+
         public VistaInspeccion()
         {
             InitializeComponent();
@@ -42,6 +46,8 @@ namespace ControlDeCalidad.Presentacion
         {
             observadosBindingSource.DataSource = observados;
             reprocesosBindingSource.DataSource = reprocesados;
+            enteros=new List<int>(reprocesosBindingSource.Count);
+
             panel1.AutoSize = false;
             panel2.AutoSize = false;
             timer1.Enabled = true;
@@ -77,10 +83,22 @@ namespace ControlDeCalidad.Presentacion
             
             if (this.dataGridView2.Columns[e.ColumnIndex].Name == "DgvBtnRIzqAgregar")
             {
+                
+                reprocesosBindingSource.PositionChanged += ReprocesosBindingSource_PositionChanged;
                 _presentador.agregarDefecto(reprocesosBindingSource.Current as Defecto, LblRPieIzq.Text);
-                var def = reprocesosBindingSource.Current as Defecto;
-                Console.WriteLine(def.Descripcion);
-                dataGridView2.Rows[reprocesosBindingSource.Position].Cells[2].Value = b++;
+                
+
+                if (enteros.Count == 0)
+                {
+                    enteros.Add(inspeccion);
+                    dataGridView2.Rows[reprocesosBindingSource.Position].Cells[2].Value = inspeccion;
+                }
+                else
+                {
+                    enteros.Add(inspeccion);
+                    dataGridView2.Rows[reprocesosBindingSource.Position].Cells[2].Value = enteros[reprocesosBindingSource.Position]++;
+                }
+
             }
             if (this.dataGridView2.Columns[e.ColumnIndex].Name == "DgvBtnRIzqQuitar")
             {
@@ -95,9 +113,18 @@ namespace ControlDeCalidad.Presentacion
                 _presentador.agregarDefecto(reprocesosBindingSource.Current as Defecto, LblPieDer.Text);
             }
         }
+
+        private void ReprocesosBindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            inspeccion = 0;
+        }
+
         private void PbxAgregar_Click(object sender, EventArgs e)
         {
+            
             _presentador.agregarParDePrimera();
+            ++pdp;
+            TbxCantidadPrimera.Text = pdp.ToString();
         }
 
         private void PbxQuitar_Click(object sender, EventArgs e)
@@ -115,6 +142,11 @@ namespace ControlDeCalidad.Presentacion
             _presentador.CerrarSesion();
         }
 
+        private void BtnDesasociar_Click(object sender, EventArgs e)
+        {
+            _presentador.Desasociar();
+        }
+
         public void Cerrar()
         {
             this.Dispose();
@@ -122,7 +154,8 @@ namespace ControlDeCalidad.Presentacion
 
         public void MostrarMensaje(string mensaje, bool esError = false)
         {
-           
+            MessageBox.Show(mensaje, "OrdenDeProduccion", MessageBoxButtons.OK,
+                esError ? MessageBoxIcon.Error : MessageBoxIcon.Information);
         }
     }
 

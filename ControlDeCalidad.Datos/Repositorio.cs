@@ -81,12 +81,12 @@ namespace ControlDeCalidad.Datos
             {
                 new Turno()
                 {
-                    inicio = "06:00",
-                    fin = "14:00"
+                    inicio = "14:00",
+                    fin = "22:00"
                 },
                 new Turno()
                 {
-                    inicio = "14:00",
+                    inicio = "00:00",
                     fin = "23:00"
                 }
             };
@@ -139,58 +139,6 @@ namespace ControlDeCalidad.Datos
                 {
                     Tipo = TipoDefecto.Observado,
                     Descripcion = "Defecto3"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto4"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto5"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto6"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto7"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto8"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto9"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto10"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto11"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto12"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto13"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto14"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto15"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Observado,
-                    Descripcion = "Defecto16"
                 },
                 new Defecto()
                 {
@@ -204,51 +152,7 @@ namespace ControlDeCalidad.Datos
                 {
                     Tipo = TipoDefecto.Reproceso,
                     Descripcion = "Defecto3"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto4"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto5"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto6"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto7"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto8"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto9"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto10"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto11"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto12"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto13"
-                },new Defecto()
-                {
-                    Tipo = TipoDefecto.Reproceso,
-                    Descripcion = "Defecto14"
-                },
+                }
             };
             lineas = new List<LineaDeTrabajo>()
             {
