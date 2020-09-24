@@ -1,0 +1,15 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Api.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Api.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Datos.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.DominioBackend.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Dominio.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Datos.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.DominioBackend.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.Dominio.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\obj\Debug\ControlDeCalidad.Api.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\obj\Debug\ControlDeCalidad.Api.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\obj\Debug\ControlDeCalidad.Api.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\obj\Debug\ControlDeCalidad.Api.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\obj\Debug\ControlDeCalidad.Api.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.InfraestructuraTransversal.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Api\bin\Debug\ControlDeCalidad.InfraestructuraTransversal.pdb

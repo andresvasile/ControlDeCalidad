@@ -1,0 +1,11 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.InfraestructuraTransversal.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.InfraestructuraTransversal.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.Datos.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.Datos.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\obj\Debug\ControlDeCalidad.InfraestructuraTransversal.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\obj\Debug\ControlDeCalidad.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\obj\Debug\ControlDeCalidad.InfraestructuraTransversal.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\obj\Debug\ControlDeCalidad.InfraestructuraTransversal.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\obj\Debug\ControlDeCalidad.InfraestructuraTransversal.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.DominioBackend.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.InfraestructuraTransversal\bin\Debug\ControlDeCalidad.DominioBackend.pdb

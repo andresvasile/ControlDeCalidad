@@ -1,0 +1,13 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.exe
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.deps.json
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.runtimeconfig.json
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.runtimeconfig.dev.json
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\bin\Debug\netcoreapp3.1\Cliuente.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.AssemblyInfoInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.AssemblyInfo.cs
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\Cliuente\obj\Debug\netcoreapp3.1\Cliuente.genruntimeconfig.cache

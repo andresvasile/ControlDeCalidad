@@ -8,50 +8,18 @@ namespace ControlDeCalidad.Dominio.Entidades
 {
     public class OrdenDeProduccion
     {
-        public OrdenDeProduccion(Modelo modelo, Color color)
-        {
-            Estado = EstadoOrden.Activa;
-            ++Numero;
-        }
-
+        public int Numero { get; set; }
+        public Modelo Modelo { get; set; }
+        public Color Color { get; set; }
+        public EstadoOrden Estado { get; set; }
+        public List<Jornada> jornadas { get; set; }
+        public Empleado empleado { get; set; }
         public OrdenDeProduccion()
         {
-            
+
         }
 
-        private int _numero=0;
+        
 
-        public int Numero
-        {
-            get
-            {
-                return _numero;
-            }
-            set
-            {
-                value = _numero;
-            }
-        }
-
-        public EstadoOrden Estado { get; set; }
-
-        private bool ComprobarEstado()
-        {
-            if (Estado == EstadoOrden.Finalizada)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        private void PausarOP()
-        {
-            Estado = EstadoOrden.Pausada;
-        }
-
-       
     }
 }

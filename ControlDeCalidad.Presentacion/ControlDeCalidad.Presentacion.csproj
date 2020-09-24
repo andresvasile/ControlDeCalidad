@@ -44,27 +44,116 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions">
+      <HintPath>E:\facultad\TERCER AÑO\PAV\FiguraSGeometricas\packages\Unity.5.11.7\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container">
+      <HintPath>E:\facultad\TERCER AÑO\PAV\FiguraSGeometricas\packages\Unity.5.11.7\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IVistaAsociarSupervisorCalidad.cs" />
+    <Compile Include="Interfaces\IVistaAutenticacion.cs" />
+    <Compile Include="Interfaces\IVistaGestionarColores.cs" />
+    <Compile Include="Interfaces\IVistaGestionarModelos.cs" />
     <Compile Include="Interfaces\IVistaInspeccion.cs" />
+    <Compile Include="Interfaces\IVistaInteractiva.cs" />
     <Compile Include="Interfaces\IVistaOrdenDeProduccion.cs" />
     <Compile Include="Presentadores\PresentadorAdministrarOrdenDeProduccion.cs" />
+    <Compile Include="Presentadores\PresentadorAsociarSupervisorCalidad.cs" />
+    <Compile Include="Presentadores\PresentadorAutenticacion.cs" />
+    <Compile Include="Presentadores\PresentadorComun.cs" />
+    <Compile Include="Presentadores\PresentadorGestionarColores.cs" />
+    <Compile Include="Presentadores\PresentadorGestionarModelos.cs" />
+    <Compile Include="Presentadores\PresentadorInspeccion.cs" />
+    <Compile Include="Vistas\VistaAdministrarOrdenDeProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaAdministrarOrdenDeProduccion.Designer.cs">
+      <DependentUpon>VistaAdministrarOrdenDeProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaAutenticacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaAutenticacion.Designer.cs">
+      <DependentUpon>VistaAutenticacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaColores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaColores.Designer.cs">
+      <DependentUpon>VistaColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaCrearYEditarColores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaCrearYEditarColores.Designer.cs">
+      <DependentUpon>VistaCrearYEditarColores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaCrearYEditarModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaCrearYEditarModelos.Designer.cs">
+      <DependentUpon>VistaCrearYEditarModelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaDeterminarProceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaDeterminarProceso.Designer.cs">
+      <DependentUpon>VistaDeterminarProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaHermanado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaHermanado.Designer.cs">
+      <DependentUpon>VistaHermanado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\VistaInspeccion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\VistaInspeccion.Designer.cs">
       <DependentUpon>VistaInspeccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\VistaOrdenDeProduccion.cs">
+    <Compile Include="Vistas\VistaListarOrdenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\VistaOrdenDeProduccion.Designer.cs">
-      <DependentUpon>VistaOrdenDeProduccion.cs</DependentUpon>
+    <Compile Include="Vistas\VistaListarOrdenes.Designer.cs">
+      <DependentUpon>VistaListarOrdenes.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\VistaInspeccion.resx">
-      <DependentUpon>VistaInspeccion.cs</DependentUpon>
+    <Compile Include="Vistas\VistaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaMenu.Designer.cs">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaModelos.Designer.cs">
+      <DependentUpon>VistaModelos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\VistaAdministrarOrdenDeProduccion.resx">
+      <DependentUpon>VistaAdministrarOrdenDeProduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaAutenticacion.resx">
+      <DependentUpon>VistaAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaColores.resx">
+      <DependentUpon>VistaColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaCrearYEditarColores.resx">
+      <DependentUpon>VistaCrearYEditarColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaCrearYEditarModelos.resx">
+      <DependentUpon>VistaCrearYEditarModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaDeterminarProceso.resx">
+      <DependentUpon>VistaDeterminarProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaHermanado.resx">
+      <DependentUpon>VistaHermanado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,10 +163,25 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vistas\VistaOrdenDeProduccion.resx">
-      <DependentUpon>VistaOrdenDeProduccion.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\VistaInspeccion.resx">
+      <DependentUpon>VistaInspeccion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaListarOrdenes.resx">
+      <DependentUpon>VistaListarOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaMenu.resx">
+      <DependentUpon>VistaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaModelos.resx">
+      <DependentUpon>VistaModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\ControlDeCalidad.Dominio.Entidades.Color.datasource" />
+    <None Include="Properties\DataSources\ControlDeCalidad.Dominio.Entidades.Defecto.datasource" />
+    <None Include="Properties\DataSources\ControlDeCalidad.Dominio.Entidades.LineaDeTrabajo.datasource" />
+    <None Include="Properties\DataSources\ControlDeCalidad.Dominio.Entidades.Modelo.datasource" />
+    <None Include="Properties\DataSources\ControlDeCalidad.Dominio.Entidades.OrdenDeProduccion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,8 +195,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Content Include="Imagenes\add.png" />
+    <Content Include="Imagenes\delete.png" />
+    <Content Include="Imagenes\edit.png" />
+    <Content Include="Imagenes\iconfinder_199_CircledPlus_183316.png" />
+    <Content Include="Imagenes\iconfinder_minus_1645995.png" />
+    <Content Include="Imagenes\iconfinder_write_126582.png" />
+    <Content Include="Imagenes\mas %281%29.png" />
+    <Content Include="Imagenes\mas.png" />
+    <Content Include="Imagenes\signo-de-mas %281%29.png" />
+    <Content Include="Imagenes\signo-de-mas %282%29.png" />
+    <Content Include="Imagenes\signo-de-mas %283%29.png" />
+    <Content Include="Imagenes\signo-de-mas.png" />
+    <Content Include="Imagenes\ui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlDeCalidad.Api\ControlDeCalidad.Api.csproj">
+      <Project>{91bb2238-83f0-4e56-beb5-bebf36a8486c}</Project>
+      <Name>ControlDeCalidad.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ControlDeCalidad.Datos\ControlDeCalidad.Datos.csproj">
       <Project>{630cda81-1824-4c5a-8517-35438356047b}</Project>
       <Name>ControlDeCalidad.Datos</Name>
@@ -101,6 +223,11 @@
       <Project>{8c8f307e-642a-4cc9-bd39-c1861140ff89}</Project>
       <Name>ControlDeCalidad.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ControlDeCalidad.InfraestructuraTransversal\ControlDeCalidad.InfraestructuraTransversal.csproj">
+      <Project>{568cbdf4-29d8-4da1-b516-53c65872cf5c}</Project>
+      <Name>ControlDeCalidad.InfraestructuraTransversal</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

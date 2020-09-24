@@ -7,3 +7,5 @@ C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.csproj.CopyComplete
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.dll
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\obj\Debug\ControlDeCalidad.Datos.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.DominioBackend.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Datos\bin\Debug\ControlDeCalidad.DominioBackend.pdb

@@ -1,4 +1,6 @@
-﻿namespace ControlDeCalidad.Dominio.Entidades
+﻿using System;
+
+namespace ControlDeCalidad.Dominio.Entidades
 {
     public class Modelo
     {
@@ -9,5 +11,6 @@
         {
             
         }
+
     }
 }

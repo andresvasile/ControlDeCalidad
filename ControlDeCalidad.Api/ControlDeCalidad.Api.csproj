@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91BB2238-83F0-4E56-BEB5-BEBF36A8486C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlDeCalidad.Api</RootNamespace>
+    <AssemblyName>ControlDeCalidad.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContoladorApi.cs" />
+    <Compile Include="Modelos\ColorModel.cs" />
+    <Compile Include="Modelos\DefectoModel.cs" />
+    <Compile Include="Modelos\EmpleadoModel.cs" />
+    <Compile Include="Modelos\JornadaModel.cs" />
+    <Compile Include="Modelos\LineaDeTrabajoModel.cs" />
+    <Compile Include="Modelos\ModeloModel.cs" />
+    <Compile Include="Modelos\OrdenDeProduccionModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ControlDeCalidad.Datos\ControlDeCalidad.Datos.csproj">
+      <Project>{630cda81-1824-4c5a-8517-35438356047b}</Project>
+      <Name>ControlDeCalidad.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlDeCalidad.DominioBackend\ControlDeCalidad.DominioBackend.csproj">
+      <Project>{a883f4ea-260a-45b3-bd4e-34a0556a5a53}</Project>
+      <Name>ControlDeCalidad.DominioBackend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlDeCalidad.Dominio\ControlDeCalidad.Dominio.csproj">
+      <Project>{8C8F307E-642A-4CC9-BD39-C1861140FF89}</Project>
+      <Name>ControlDeCalidad.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlDeCalidad.InfraestructuraTransversal\ControlDeCalidad.InfraestructuraTransversal.csproj">
+      <Project>{568CBDF4-29D8-4DA1-B516-53C65872CF5C}</Project>
+      <Name>ControlDeCalidad.InfraestructuraTransversal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

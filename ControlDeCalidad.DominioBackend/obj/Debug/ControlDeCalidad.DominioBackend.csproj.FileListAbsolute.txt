@@ -1,0 +1,6 @@
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\bin\Debug\ControlDeCalidad.DominioBackend.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\bin\Debug\ControlDeCalidad.DominioBackend.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\obj\Debug\ControlDeCalidad.DominioBackend.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\obj\Debug\ControlDeCalidad.DominioBackend.dll
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\obj\Debug\ControlDeCalidad.DominioBackend.pdb
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.DominioBackend\obj\Debug\ControlDeCalidad.DominioBackend.csprojAssemblyReference.cache

@@ -10,5 +10,7 @@ namespace ControlDeCalidad.Dominio.Entidades
     {
         public string Descripcion { get; set; }
         public TipoDefecto Tipo { get; set; }
+
+        public int Cantidad { get; set; }
     }
 }
