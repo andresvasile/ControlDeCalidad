@@ -112,36 +112,40 @@
             // NumOrden
             // 
             this.NumOrden.AutoSize = true;
+            this.NumOrden.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumOrden.Location = new System.Drawing.Point(510, 109);
             this.NumOrden.Name = "NumOrden";
-            this.NumOrden.Size = new System.Drawing.Size(127, 13);
+            this.NumOrden.Size = new System.Drawing.Size(143, 14);
             this.NumOrden.TabIndex = 6;
             this.NumOrden.Text = "Número de Órden Actual:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(510, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(39, 14);
             this.label3.TabIndex = 8;
             this.label3.Text = "Color:";
             // 
             // LblEstado
             // 
             this.LblEstado.AutoSize = true;
+            this.LblEstado.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEstado.Location = new System.Drawing.Point(510, 135);
             this.LblEstado.Name = "LblEstado";
-            this.LblEstado.Size = new System.Drawing.Size(43, 13);
+            this.LblEstado.Size = new System.Drawing.Size(46, 14);
             this.LblEstado.TabIndex = 7;
             this.LblEstado.Text = "Estado:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(510, 194);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.Size = new System.Drawing.Size(50, 14);
             this.label8.TabIndex = 9;
             this.label8.Text = "Modelo:";
             // 
@@ -239,33 +243,37 @@
             // LblMostrarOrden
             // 
             this.LblMostrarOrden.AutoSize = true;
+            this.LblMostrarOrden.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMostrarOrden.Location = new System.Drawing.Point(671, 109);
             this.LblMostrarOrden.Name = "LblMostrarOrden";
-            this.LblMostrarOrden.Size = new System.Drawing.Size(0, 13);
+            this.LblMostrarOrden.Size = new System.Drawing.Size(0, 14);
             this.LblMostrarOrden.TabIndex = 21;
             // 
             // LblMostrarEstado
             // 
             this.LblMostrarEstado.AutoSize = true;
+            this.LblMostrarEstado.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMostrarEstado.Location = new System.Drawing.Point(570, 135);
             this.LblMostrarEstado.Name = "LblMostrarEstado";
-            this.LblMostrarEstado.Size = new System.Drawing.Size(0, 13);
+            this.LblMostrarEstado.Size = new System.Drawing.Size(0, 14);
             this.LblMostrarEstado.TabIndex = 22;
             // 
             // LblMostrarColor
             // 
             this.LblMostrarColor.AutoSize = true;
+            this.LblMostrarColor.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMostrarColor.Location = new System.Drawing.Point(560, 165);
             this.LblMostrarColor.Name = "LblMostrarColor";
-            this.LblMostrarColor.Size = new System.Drawing.Size(0, 13);
+            this.LblMostrarColor.Size = new System.Drawing.Size(0, 14);
             this.LblMostrarColor.TabIndex = 23;
             // 
             // LblMostrarModelo
             // 
             this.LblMostrarModelo.AutoSize = true;
+            this.LblMostrarModelo.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMostrarModelo.Location = new System.Drawing.Point(570, 194);
             this.LblMostrarModelo.Name = "LblMostrarModelo";
-            this.LblMostrarModelo.Size = new System.Drawing.Size(0, 13);
+            this.LblMostrarModelo.Size = new System.Drawing.Size(0, 14);
             this.LblMostrarModelo.TabIndex = 24;
             // 
             // label1
@@ -281,6 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 418);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LblMostrarModelo);

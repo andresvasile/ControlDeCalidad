@@ -13,5 +13,10 @@ namespace ControlDeCalidad.DominioBackend.Entidades
         public TipoPie TipoPie;
         public string Hora;
         public bool esDePrimera;
+
+        public Inspeccion()
+        {
+            
+        }
     }
 }

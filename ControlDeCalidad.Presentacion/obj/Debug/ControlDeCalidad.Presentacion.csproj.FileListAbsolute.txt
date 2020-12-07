@@ -34,3 +34,4 @@ C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.Vistas.VistaModelos.resources
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.Vistas.VistaListarOrdenes.resources
 C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\obj\Debug\ControlDeCalidad.Presentacion.VistaInspeccion.resources
+C:\Users\USUARIO\source\repos\ControlDeCalidad\ControlDeCalidad.Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll

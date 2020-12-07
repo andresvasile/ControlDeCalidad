@@ -21,7 +21,6 @@ namespace ControlDeCalidad.Api
         {
             _repositorio = Repositorio.Instance;
         }
-
         public Tuple<List<LineaDeTrabajoModel>,List<OrdenDeProduccionModel>> ObtenerOrdenes()
         {
             List<OrdenDeProduccion> ordenesAListar = new List<OrdenDeProduccion>();
@@ -44,7 +43,6 @@ namespace ControlDeCalidad.Api
             var tupla = new Tuple<List<LineaDeTrabajoModel>, List<OrdenDeProduccionModel>>(MapearLinea(lineasAListar), MapearOrdenes(ordenesAListar));
             return tupla;
         }
-
         public void agregarParDePrimeraHermanado()
         {
             var hora = obtenerHora();
@@ -65,9 +63,6 @@ namespace ControlDeCalidad.Api
                 linea.registrarParDeSegundaHermanado(e);
             }
         }
-
-        
-
         public bool validarAsociado()
         {
             var e=GestorSesion.Instance.buscarEmpleado();
@@ -79,7 +74,6 @@ namespace ControlDeCalidad.Api
 
             return false;
         }
-
         public void asociarSupervisor(int numeroOrden)
         {
             var ldts=_repositorio.buscarLineas();
@@ -270,7 +264,8 @@ namespace ControlDeCalidad.Api
             return _repositorio.obtenerHora();
         }
 
-        private OrdenDeProduccion CrearOrdenProduccion(int numeroOrden,int modelo, int color, Entidades.LineaDeTrabajo ldt)
+        private OrdenDeProduccion CrearOrdenProduccion(int numeroOrden,int modelo,
+            int color, Entidades.LineaDeTrabajo ldt)
         {
             var mod = _repositorio.BuscarModelo(modelo);
             var col = _repositorio.BuscarColor(color);
@@ -287,7 +282,6 @@ namespace ControlDeCalidad.Api
             return null;
         }
         #endregion
-
 
         #region Color
         public void crearNuevoColor(ColorModel colorModel)
@@ -342,7 +336,6 @@ namespace ControlDeCalidad.Api
             return coloresModels;
         }
         #endregion
-
 
         #region Modelo
         public void crearNuevoModelo(ModeloModel ModeloModel)
@@ -400,7 +393,6 @@ namespace ControlDeCalidad.Api
         }
         #endregion
 
-
         #region Inspeccion
         public void agregarParDePrimera()
         {
@@ -421,8 +413,8 @@ namespace ControlDeCalidad.Api
                 Tipo = (TipoDefecto) Enum.Parse(typeof(TipoDefecto), defectoModel.Tipo)
             };
 
-            var hora = obtenerHora();
             var ldts = _repositorio.buscarLineas();
+            var hora = obtenerHora();
             var e = GestorSesion.Instance.buscarEmpleado();
             foreach (var linea in ldts)
             {

@@ -301,7 +301,6 @@ namespace ControlDeCalidad.Datos
                     }
                 }
             };
-            
         }
         public void modificarModelo(Modelo modelo)
         {
@@ -347,7 +346,6 @@ namespace ControlDeCalidad.Datos
         {
             return lineas.Single(l => l.Empleado.Documento == empleado.Documento);
         }
-
         public OrdenDeProduccion BuscarOrdenCodigo(int lineaTrabajo, int numeroOrden)
         {
             return lineas.Find(l => l.numeroLinea == lineaTrabajo)

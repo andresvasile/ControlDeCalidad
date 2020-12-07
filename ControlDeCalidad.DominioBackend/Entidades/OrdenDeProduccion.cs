@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -35,32 +36,35 @@ namespace ControlDeCalidad.Api.Entidades
             if (Estado == EstadoOrden.Finalizada) return true;
             return false;
         }
-
         public bool esPausada()
         {
             if (Estado == EstadoOrden.Pausada) return true;
             return false;
         }
-
         public bool esActiva()
         {
             if (Estado == EstadoOrden.Activa) return true;
             return false;
         }
-
         internal bool esEmpleado(Empleado e)
         {
             if (empleado==e) return true;
             return false;
         }
-
         internal void agregarInspeccionPrimera(string hora, Empleado e)
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-            jornada.agregarInspeccionPrimera(hora);
-        }
+            if (x > 0)
+            {
+                jornada.agregarInspeccionPrimera(hora);
+            }
+            else
+            {
+                throw new Exception("No hay jornadas registradas");
+            }
 
+        }
         public void asociarEmpleado(Empleado e)
         {
             empleado = e;
@@ -75,29 +79,48 @@ namespace ControlDeCalidad.Api.Entidades
                 throw new Exception("No hay jornadas registradas");
             }
         }
-
         internal void agregarInspeccionDefecto(string hora, Defecto defecto, TipoPie tipoPie)
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-            jornada.agregarInspeccionDefecto(hora, defecto, tipoPie);
+            if (x > 0)
+            {
+                jornada.agregarInspeccionDefecto(hora, defecto, tipoPie);
+            }
+            else
+            {
+                throw new Exception("No hay jornadas registradas");
+            }
+            
             
         }
-
-        internal void agregarInspeccionPrimeraHermanado()
+        internal void agregarPrimeraHermanado()
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-            jornada.agregarInspeccionPrimeraHermanado();
+            if (x > 0)
+            {
+                jornada.agregarPrimeraHermanado();
+            }
+            else
+            {
+                throw new Exception("No hay jornadas registradas");
+            }
         }
-        internal void agregarInspeccionSegundaHermanado()
+        internal void agregarSegundaHermanado()
         {
             var x = jornadas.Count;
             var jornada = jornadas[x - 1];
-
-            jornada.agregarInspeccionSegundaHermanado();
+            if (x > 0)
+            {
+                jornada.agregarSegundaHermanado();
+            }
+            else
+            {
+                throw new Exception("No hay jornadas registradas");
+            }
+            
         }
-
         internal void reanudarOrden(string hora)
         {
             if (this.empleado != null)
@@ -111,14 +134,17 @@ namespace ControlDeCalidad.Api.Entidades
                 Estado = EstadoOrden.Activa;
             }
         }
-
         internal void pausarOrden(string hora)
         {
             if (empleado != null)
             {
                 var x = jornadas.Count;
                 var jornada = jornadas[x - 1];
-                jornada.Fin = hora;
+                if (x > 0)
+                {
+                    jornada.Fin = hora;
+                }
+                
                 Estado = EstadoOrden.Pausada;
             }
             else
@@ -126,14 +152,17 @@ namespace ControlDeCalidad.Api.Entidades
                 throw new Exception("Empleado no asignado a orden");
             }
         }
-
         internal void finalizarOrden(string hora)
         {
             if (empleado != null)
             {
                 var x = jornadas.Count;
                 var jornada = jornadas[x - 1];
-                jornada.Fin = hora;
+                if (x > 0)
+                {
+                    jornada.Fin = hora;
+                }
+                
                 Estado = EstadoOrden.Finalizada;
             }
             else

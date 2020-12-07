@@ -80,7 +80,6 @@ namespace ControlDeCalidad.Presentacion.Vistas
                 var vista = new VistaDeterminarProceso();
                 vista.Show();
             }
-            
         }
     }
 }

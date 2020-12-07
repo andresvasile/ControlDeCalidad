@@ -45,8 +45,8 @@ namespace ControlDeCalidad.Api.Entidades
 
             #endregion
         }
-
-        public OrdenDeProduccion CrearOrden(int numeroOrden, Modelo mod, Color col, List<Turno> turnos, string horaActual)
+        public OrdenDeProduccion CrearOrden(int numeroOrden, Modelo mod, Color col, 
+            List<Turno> turnos, string horaActual)
         {
             var v = validarTurno(horaActual,turnos);
             if (v)
@@ -79,7 +79,6 @@ namespace ControlDeCalidad.Api.Entidades
             }
             return false;
         }
-
         public void registrarParDePrimeraHermanado(Empleado e)
         {
             foreach(var op in ordenes)
@@ -87,7 +86,7 @@ namespace ControlDeCalidad.Api.Entidades
                 var v = op.esEmpleado(e);
                 if (v)
                 {
-                    op.agregarInspeccionPrimeraHermanado();
+                    op.agregarPrimeraHermanado();
                 }
             }
         }
@@ -98,11 +97,10 @@ namespace ControlDeCalidad.Api.Entidades
                 var v = op.esEmpleado(e);
                 if (v)
                 {
-                    op.agregarInspeccionSegundaHermanado();
+                    op.agregarSegundaHermanado();
                 }
             }
         }
-
         public void asociarEmp(int numeroOrden, Empleado e)
         {
             foreach (var op in ordenes)
@@ -113,12 +111,10 @@ namespace ControlDeCalidad.Api.Entidades
                 }
             }
         }
-
         public bool validarAsociado(Empleado e)
         {
             foreach (var orden in ordenes)
             {
-                
                 if (orden.esEmpleado(e) && !orden.esFinalizada())
                 {
                     return true;
@@ -126,7 +122,6 @@ namespace ControlDeCalidad.Api.Entidades
             }
             return false;
         }
-
         public int ParsearHora(string hora)
         {
             var horaAct = "";
@@ -137,7 +132,6 @@ namespace ControlDeCalidad.Api.Entidades
             }
             return int.Parse(horaAct);
         }
-
         public void DesasociarEmp(Empleado e)
         {
             foreach (var orden in ordenes)
@@ -148,8 +142,6 @@ namespace ControlDeCalidad.Api.Entidades
                 }
             }
         }
-
-
         public void registrarDefecto(Empleado e, string hora, Defecto defecto, string tipoPie)
         {
             foreach (var op in ordenes)
@@ -161,7 +153,6 @@ namespace ControlDeCalidad.Api.Entidades
                 }
             }
         }
-
         public void registrarParDePrimera(Empleado e, string hora)
         {
             foreach (var op in ordenes)
@@ -173,41 +164,38 @@ namespace ControlDeCalidad.Api.Entidades
                 }
             }
         }
-
         public OrdenDeProduccion pausarOrden(string hora)
         {
-            foreach (var orden in ordenes)
+            foreach (var op in ordenes)
             {
-                if (orden.esActiva())
+                if (op.esActiva())
                 {
-                    orden.pausarOrden(hora);
-                    return orden;
+                    op.pausarOrden(hora);
+                    return op;
                 }
             }
             return null;
         }
-
         public OrdenDeProduccion reanudarOrden(string hora)
         {
-            foreach (var orden in ordenes)
+            foreach (var op in ordenes)
             {
-                if (orden.esPausada())
+                if (op.esPausada())
                 {
-                    orden.reanudarOrden(hora);
-                    return orden;
+                    op.reanudarOrden(hora);
+                    return op;
                 }
             }
             return null;
         }
-
         public OrdenDeProduccion finalizarOrden(string hora)
         {
-            foreach (var orden in ordenes)
+            foreach (var op in ordenes)
             {
-                if (orden.esActiva() || orden.esPausada())
+                if (op.esActiva() || op.esPausada())
                 {
-                    orden.finalizarOrden(hora);
-                    return orden;
+                    op.finalizarOrden(hora);
+                    return op;
                 }
             }
             return null;

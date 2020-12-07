@@ -35,21 +35,21 @@ namespace ControlDeCalidad.Presentacion
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.reprocesosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DgvBtnRIzqAgregar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DgvBtnRIzqQuitar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DgvBtnRDerAgregar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvBtnRDerQuitar = new System.Windows.Forms.DataGridViewImageColumn();
             this.LblReprocesos = new System.Windows.Forms.Label();
             this.LblRPieIzq = new System.Windows.Forms.Label();
             this.LblPieDer = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.DgvBtnOIzqAgregar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DgvTxbOI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DgvBtnOIzqQuitar = new System.Windows.Forms.DataGridViewImageColumn();
             this.DgvBtnODerAgregar = new System.Windows.Forms.DataGridViewImageColumn();
             this.DgvTxbOD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DgvBtnODerQuitar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.descripcionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.LblOPieIzq = new System.Windows.Forms.Label();
             this.LblObservados = new System.Windows.Forms.Label();
@@ -73,22 +73,21 @@ namespace ControlDeCalidad.Presentacion
             this.BtnDeslogear = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DgvBtnRIzqAgregar = new System.Windows.Forms.DataGridViewImageColumn();
             this.DgvTxbRD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DgvBtnRIzqQuitar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DgvBtnRDerAgregar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DgvBtnRDerQuitar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.reprocesosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.descripcionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvTxbOI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reprocesosBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.observadosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxQuitar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDeslogear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reprocesosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observadosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -117,7 +116,7 @@ namespace ControlDeCalidad.Presentacion
             this.panel2.Controls.Add(this.LblPieDer);
             this.panel2.Location = new System.Drawing.Point(678, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(531, 592);
+            this.panel2.Size = new System.Drawing.Size(555, 592);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView2
@@ -139,13 +138,47 @@ namespace ControlDeCalidad.Presentacion
             this.dataGridView2.Location = new System.Drawing.Point(53, 77);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(475, 512);
+            this.dataGridView2.Size = new System.Drawing.Size(499, 512);
             this.dataGridView2.TabIndex = 7;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // reprocesosBindingSource
+            // DgvBtnRIzqAgregar
             // 
-            this.reprocesosBindingSource.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.Defecto);
+            this.DgvBtnRIzqAgregar.HeaderText = "Agregar";
+            this.DgvBtnRIzqAgregar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRIzqAgregar.Image")));
+            this.DgvBtnRIzqAgregar.Name = "DgvBtnRIzqAgregar";
+            this.DgvBtnRIzqAgregar.ReadOnly = true;
+            this.DgvBtnRIzqAgregar.Width = 50;
+            // 
+            // DgvBtnRIzqQuitar
+            // 
+            this.DgvBtnRIzqQuitar.HeaderText = "Quitar";
+            this.DgvBtnRIzqQuitar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRIzqQuitar.Image")));
+            this.DgvBtnRIzqQuitar.Name = "DgvBtnRIzqQuitar";
+            this.DgvBtnRIzqQuitar.ReadOnly = true;
+            this.DgvBtnRIzqQuitar.Width = 50;
+            // 
+            // DgvBtnRDerAgregar
+            // 
+            this.DgvBtnRDerAgregar.HeaderText = "Agregar";
+            this.DgvBtnRDerAgregar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRDerAgregar.Image")));
+            this.DgvBtnRDerAgregar.Name = "DgvBtnRDerAgregar";
+            this.DgvBtnRDerAgregar.ReadOnly = true;
+            this.DgvBtnRDerAgregar.Width = 50;
+            // 
+            // cantidadDataGridViewTextBoxColumn
+            // 
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // DgvBtnRDerQuitar
+            // 
+            this.DgvBtnRDerQuitar.HeaderText = "Quitar";
+            this.DgvBtnRDerQuitar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRDerQuitar.Image")));
+            this.DgvBtnRDerQuitar.Name = "DgvBtnRDerQuitar";
+            this.DgvBtnRDerQuitar.ReadOnly = true;
+            this.DgvBtnRDerQuitar.Width = 50;
             // 
             // LblReprocesos
             // 
@@ -184,7 +217,7 @@ namespace ControlDeCalidad.Presentacion
             this.panel1.Controls.Add(this.LblOPieDer);
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 592);
+            this.panel1.Size = new System.Drawing.Size(503, 592);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -196,19 +229,18 @@ namespace ControlDeCalidad.Presentacion
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.descripcionDataGridViewTextBoxColumn1,
             this.DgvBtnOIzqAgregar,
             this.DgvTxbOI,
             this.DgvBtnOIzqQuitar,
             this.DgvBtnODerAgregar,
             this.DgvTxbOD,
-            this.DgvBtnODerQuitar,
-            this.descripcionDataGridViewTextBoxColumn1,
-            this.tipoDataGridViewTextBoxColumn1});
+            this.DgvBtnODerQuitar});
             this.dataGridView1.DataSource = this.observadosBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(43, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(526, 512);
+            this.dataGridView1.Size = new System.Drawing.Size(457, 512);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -220,13 +252,6 @@ namespace ControlDeCalidad.Presentacion
             this.DgvBtnOIzqAgregar.Name = "DgvBtnOIzqAgregar";
             this.DgvBtnOIzqAgregar.ReadOnly = true;
             this.DgvBtnOIzqAgregar.Width = 50;
-            // 
-            // DgvTxbOI
-            // 
-            this.DgvTxbOI.HeaderText = "Cantidad";
-            this.DgvTxbOI.Name = "DgvTxbOI";
-            this.DgvTxbOI.ReadOnly = true;
-            this.DgvTxbOI.Width = 55;
             // 
             // DgvBtnOIzqQuitar
             // 
@@ -258,24 +283,6 @@ namespace ControlDeCalidad.Presentacion
             this.DgvBtnODerQuitar.Name = "DgvBtnODerQuitar";
             this.DgvBtnODerQuitar.ReadOnly = true;
             this.DgvBtnODerQuitar.Width = 50;
-            // 
-            // descripcionDataGridViewTextBoxColumn1
-            // 
-            this.descripcionDataGridViewTextBoxColumn1.DataPropertyName = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn1.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn1.Name = "descripcionDataGridViewTextBoxColumn1";
-            this.descripcionDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // tipoDataGridViewTextBoxColumn1
-            // 
-            this.tipoDataGridViewTextBoxColumn1.DataPropertyName = "Tipo";
-            this.tipoDataGridViewTextBoxColumn1.HeaderText = "Tipo";
-            this.tipoDataGridViewTextBoxColumn1.Name = "tipoDataGridViewTextBoxColumn1";
-            this.tipoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // observadosBindingSource
-            // 
-            this.observadosBindingSource.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.Defecto);
             // 
             // splitter1
             // 
@@ -470,14 +477,6 @@ namespace ControlDeCalidad.Presentacion
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // DgvBtnRIzqAgregar
-            // 
-            this.DgvBtnRIzqAgregar.HeaderText = "Agregar";
-            this.DgvBtnRIzqAgregar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRIzqAgregar.Image")));
-            this.DgvBtnRIzqAgregar.Name = "DgvBtnRIzqAgregar";
-            this.DgvBtnRIzqAgregar.ReadOnly = true;
-            this.DgvBtnRIzqAgregar.Width = 50;
-            // 
             // DgvTxbRD
             // 
             this.DgvTxbRD.DataPropertyName = "Cantidad";
@@ -486,35 +485,28 @@ namespace ControlDeCalidad.Presentacion
             this.DgvTxbRD.ReadOnly = true;
             this.DgvTxbRD.Width = 55;
             // 
-            // DgvBtnRIzqQuitar
+            // reprocesosBindingSource
             // 
-            this.DgvBtnRIzqQuitar.HeaderText = "Quitar";
-            this.DgvBtnRIzqQuitar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRIzqQuitar.Image")));
-            this.DgvBtnRIzqQuitar.Name = "DgvBtnRIzqQuitar";
-            this.DgvBtnRIzqQuitar.ReadOnly = true;
-            this.DgvBtnRIzqQuitar.Width = 50;
+            this.reprocesosBindingSource.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.Defecto);
             // 
-            // DgvBtnRDerAgregar
+            // descripcionDataGridViewTextBoxColumn1
             // 
-            this.DgvBtnRDerAgregar.HeaderText = "Agregar";
-            this.DgvBtnRDerAgregar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRDerAgregar.Image")));
-            this.DgvBtnRDerAgregar.Name = "DgvBtnRDerAgregar";
-            this.DgvBtnRDerAgregar.ReadOnly = true;
-            this.DgvBtnRDerAgregar.Width = 50;
+            this.descripcionDataGridViewTextBoxColumn1.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn1.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn1.Name = "descripcionDataGridViewTextBoxColumn1";
+            this.descripcionDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // cantidadDataGridViewTextBoxColumn
+            // DgvTxbOI
             // 
-            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
-            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
-            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.DgvTxbOI.DataPropertyName = "Cantidad";
+            this.DgvTxbOI.HeaderText = "Cantidad";
+            this.DgvTxbOI.Name = "DgvTxbOI";
+            this.DgvTxbOI.ReadOnly = true;
+            this.DgvTxbOI.Width = 55;
             // 
-            // DgvBtnRDerQuitar
+            // observadosBindingSource
             // 
-            this.DgvBtnRDerQuitar.HeaderText = "Quitar";
-            this.DgvBtnRDerQuitar.Image = ((System.Drawing.Image)(resources.GetObject("DgvBtnRDerQuitar.Image")));
-            this.DgvBtnRDerQuitar.Name = "DgvBtnRDerQuitar";
-            this.DgvBtnRDerQuitar.ReadOnly = true;
-            this.DgvBtnRDerQuitar.Width = 50;
+            this.observadosBindingSource.DataSource = typeof(ControlDeCalidad.Dominio.Entidades.Defecto);
             // 
             // VistaInspeccion
             // 
@@ -533,21 +525,21 @@ namespace ControlDeCalidad.Presentacion
             this.Controls.Add(this.Lblhora);
             this.Name = "VistaInspeccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "RegistrarInspeccion";
             this.Load += new System.EventHandler(this.VistaInspeccion_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reprocesosBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.observadosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxQuitar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDeslogear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reprocesosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observadosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,20 +561,12 @@ namespace ControlDeCalidad.Presentacion
         private System.Windows.Forms.Label LblPieDer;
         private System.Windows.Forms.Label LblRPieIzq;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DataGridViewImageColumn DgvBtnOIzqAgregar;
-        private DataGridViewTextBoxColumn DgvTxbOI;
-        private DataGridViewImageColumn DgvBtnOIzqQuitar;
-        private DataGridViewImageColumn DgvBtnODerAgregar;
-        private DataGridViewTextBoxColumn DgvTxbOD;
-        private DataGridViewImageColumn DgvBtnODerQuitar;
         private Button BtnDesasociar;
         private DataGridView dataGridView2;
         private TextBox TbxCantidadPrimera;
         private PictureBox PbxAgregar;
         private PictureBox PbxQuitar;
         private Label LblPrimera;
-        private DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn1;
         private BindingSource observadosBindingSource;
         private DataGridViewImageColumn dataGridViewImageColumn1;
         private DataGridViewImageColumn dataGridViewImageColumn2;
@@ -603,6 +587,13 @@ namespace ControlDeCalidad.Presentacion
         private DataGridViewImageColumn DgvBtnRDerAgregar;
         private DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
         private DataGridViewImageColumn DgvBtnRDerQuitar;
+        private DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn1;
+        private DataGridViewImageColumn DgvBtnOIzqAgregar;
+        private DataGridViewTextBoxColumn DgvTxbOI;
+        private DataGridViewImageColumn DgvBtnOIzqQuitar;
+        private DataGridViewImageColumn DgvBtnODerAgregar;
+        private DataGridViewTextBoxColumn DgvTxbOD;
+        private DataGridViewImageColumn DgvBtnODerQuitar;
     }
 }
 

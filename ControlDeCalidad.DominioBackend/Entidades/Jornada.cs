@@ -17,7 +17,7 @@ namespace ControlDeCalidad.Api.Entidades
         public string Inicio { get; set; }
         public string Fin { get; set; }
         public DateTime Fecha{ get; set; }
-        public int ParesPrimera { get; set; }
+       
         public int ParesSegunda { get; set; }
         public int ParesPrimeraHermanado { get; set; }
         public int ParesSegundaHermanado { get; set; }
@@ -30,11 +30,12 @@ namespace ControlDeCalidad.Api.Entidades
                     new Inspeccion()
                     {
                         Hora = hora,
+                        esDePrimera = true
                     });
-                ParesPrimera++;
+                
         }
 
-        internal void agregarInspeccionDefecto(string hora, Defecto defectoEncontrado, TipoPie tipoPie)
+        public void agregarInspeccionDefecto(string hora, Defecto defectoEncontrado, TipoPie tipoPie)
         {
 
             Inspecciones.Add(
@@ -47,13 +48,13 @@ namespace ControlDeCalidad.Api.Entidades
            
         }
 
-        internal void agregarInspeccionPrimeraHermanado()
+        internal void agregarPrimeraHermanado()
         {
             ParesPrimeraHermanado++;
         }
-        internal void agregarInspeccionSegundaHermanado()
+        internal void agregarSegundaHermanado()
         {
-            ParesPrimeraHermanado++;
+            ParesSegundaHermanado++;
         }
     }
 }
